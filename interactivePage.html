@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика для начальной школы | Интерактивные упражнения</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesPage.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="logo-text">Математика для детей</div>
+            </div>
+            <h1>Интерактивные упражнения по математике</h1>
+            <p class="subtitle">Увлекательные задания для учеников начальной школы. Выбирайте упражнение и развивайте математические навыки!</p>
+            <a href="index.html" class="back-btn" id="mainBackBtn">
+                <i class="fas fa-arrow-left"></i> на главную
+            </a>
+        </header>
+        
+        <main>
+            <div class="exercises-grid" id="exercisesGrid">
+                <!-- Карточки упражнений будут сгенерированы JavaScript -->
+            </div>
+            
+            <div class="exercise-container" id="exerciseContainer">
+                <div class="exercise-topbar">
+                    <div class="exercise-name" id="currentExerciseName">Упражнение</div>
+                    <div class="size-controls">
+                        <button class="size-btn" id="sizeDownBtn" title="Уменьшить">
+                            <i class="fas fa-search-minus"></i>
+                        </button>
+                        <button class="size-btn" id="sizeResetBtn" title="Сбросить размер">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                        <button class="size-btn" id="sizeUpBtn" title="Увеличить">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="iframe-container">
+                    <iframe class="exercise-frame" id="exerciseFrame" src="about:blank"></iframe>
+                </div>
+                <button class="back-btn" id="backBtn">
+                    <i class="fas fa-arrow-left"></i> Вернуться к списку упражнений
+                </button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 PrimaryGuru. Онлайн-репетитор для начальной школы. Все права защищены.</p>
+            <p>Интерактивные упражнения разработаны для развития математических навыков у детей</p>
+        </footer>
+    </div>
+    
+    
+<script src="scriptPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primary.guru - Онлайн репетитор для начальной школы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-placeholder"><img src="img\logo.png" alt=”shestiugol”></div>
+                primary.<span>guru</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#lessons">Занятия</a></li>
+                    <li><a href="#tips">Советы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#summer">Летние уроки</a></li>
+                    <!-- <li><a href="#cases">Кейсы</a></li> -->
+                </ul>
+                <button class="mobile-menu-btn" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            <a href="#contact" class="btn">Связаться</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="shape shape-1"><img src="img\soti.svg" alt=”shestiugol”></div>
+       
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Эффективные занятия <span>для учеников начальной школы</span></h1>
+                    <p>Занятия со мной всегда ведут к результату. Я умею объяснять так, чтобы было понятно. 
+                        Считаю, что очень важно разговаривать с ребёнком уважительно, доброжелательно, искренне.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn">Записаться на урок</a>
+                        <a href="#about" class="btn btn-light">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <div class="hero-image-placeholder"><img src="img\repetMax.png" alt=”uchitelUchenik”></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-container">
+                        <img src="img\Repet.png" alt=”ElenaSergeevna”>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Обо мне</h2>
+                    Добрый день! Давайте познакомимся. Меня зовут Елена Сергеевна. 
+                    Я онлайн-репетитор для детей, которые учатся в начальной школе. 
+                 <div class="qualities">
+                        <div class="quality-item">
+                            <div class="quality-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3>Образование</h3>
+                                <p>Минский педагогический колледж,
+                                    БГПУ имени Максима Танка , 
+                                    аспирантура.</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div>
+                                <h3>Опыт</h3>
+                                <p>Мой педагогический путь начался в 1995 году с работы учителем начальных классов.
+                                    Двадцать лет я работала преподавателем в БГПУ имени Максима Танка: 
+                                   учила будущих учителей методикам преподавания.</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <div>
+                                <h3>Подход</h3>
+                                <p>Для каждого своего ученика обязательно составляю индивидуальный план занятий, 
+                                   опираясь на его знания и умения.</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h3>Результат</h3>
+                                <p>Мы определяем нашу цель и я прокладываю короткий путь в виде маленьких задач к её достижению. 
+                                  Каждую такую задачу мы с ребёнком решаем на занятии.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Мои услуги</h2>
+                <p>Онлайн занятия по основным предметам начальной школы с использованием эффективных методик</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Математика</h3>
+                    <p>Развитие математического мышления, решение задач, подготовка к контрольным работам. Учимся считать быстро и правильно.</p>
+                    <a href="interactivePage.html" class="btn btn-outline">Подробнее</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Русский язык</h3>
+                    <p>Грамматика, орфография, развитие речи. Учимся писать без ошибок и красиво выражать свои мысли.</p>
+                    <a href="#" class="btn btn-outline">Подробнее</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Беларуская мова</h3>
+                    <p>Асновы беларускай мовы, пашырэнне слоўнікавага запасу, разуменне тэкстаў і пісьмовая практыка.</p>
+                    <a href="#" class="btn btn-outline">Падрабязней</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section class="lessons" id="lessons">
+        <div class="container">
+            <div class="section-title">
+                <h2>Как проходят занятия</h2>
+                <p>Увлекательные онлайн-уроки с использованием современных технологий</p>
+            </div>
+            
+            <div class="lessons-content">
+                <div class="lessons-text">
+                    <h2>Индивидуальный подход к каждому ученику</h2>
+                    <p>Занятия проходят онлайн в удобное для вас время. Продолжительность урока — 45-60 минут в зависимости от возраста и потребностей ребенка.</p>
+                    <p>Использую интерактивную доску, образовательные игры и мультимедийные материалы, чтобы сделать обучение увлекательным и эффективным.</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div>
+                                <h3>Онлайн формат</h3>
+                                <p>Уроки проходят в Zoom с использованием интерактивной доски</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div>
+                                <h3>Индивидуальный подход</h3>
+                                <p>Игровые элементы и интерактивные задания</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3>Отслеживание результатов</h3>
+                                <p>Постоянная связь для корректировки прогресса</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lessons-image">
+                    <div class="lessons-image-container">
+                     <img src="img\teacher.png" alt=”Uchitel”>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips" id="tips">
+        <div class="container">
+            <div class="section-title">
+                <h2>Советы родителям</h2>
+                <p>Полезные рекомендации для поддержки обучения вашего ребенка</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3><span class="tip-number">1</span> Создайте учебную атмосферу</h3>
+                    <p>Обеспечьте ребенку тихое место для занятий с хорошим освещением. Уберите отвлекающие факторы: телевизор, громкую музыку, гаджеты (кроме учебных).</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h3><span class="tip-number">2</span> Поддерживайте регулярность</h3>
+                    <p>Лучше заниматься по 20-30 минут ежедневно, чем 2 часа раз в неделю. Регулярные короткие занятия эффективнее редких и длительных.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h3><span class="tip-number">3</span> Хвалите за усилия</h3>
+                    <p>Хвалите ребенка за старание и усилия, а не только за результат. Это формирует правильную мотивацию к обучению.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h3><span class="tip-number">4</span> Используйте игры</h3>
+                    <p>Важно сочетать радость от игры с пониманием значимости труда. 
+                       Ведь главная награда для ребёнка – это осознание, что он справился с задачей, приложив усилия.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h3><span class="tip-number">5</span> Будьте терпеливы</h3>
+                    <p>Не ругайте за ошибки. Объясняйте спокойно и терпеливо. Помните, что ребенок только учится, и ошибки — естественная часть процесса.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h3><span class="tip-number">6</span> Поддерживайте связь с учителем</h3>
+                    <p>Многие понимают, что начальная школа - это фундамент, и он должен быть прочным. 
+                        Мамы хотят быть уверенными, что они не упускают время.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Отзывы родителей</h2>
+                <p>Что говорят родители моих учеников</p>
+            </div>
+            
+            <div class="reviews-container">
+                <div class="review-card">
+                    <!-- <div class="review-content">
+                     <a href="https://www.instagram.com/stories/highlights/17849169150225175/" class="review-author">
+                      Читайте больше в Instagram
+                     </a>
+                    </div> -->
+                     
+                    <div class="review-author">
+                        <div class="author-avatar"><img src="img\logo.png" alt="logo"></div>
+                        <div class="author-info"><a href="https://www.instagram.com/stories/highlights/17849169150225175/" class="btn btn-light">Узнать больше</a>
+                            <!-- <h4>Спасибо!</h4>
+                            <p>Елена Сергеевна.</p> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="review-card">
+                    <div class="review-content">
+                        Хочу поблагодарить Анну за помощь в изучении белорусского языка. Моя дочь перешла в школу с белорусским языком обучения, и нам было сложно адаптироваться. После нескольких месяцев занятий дочь не только догнала программу, но и стала одной из лучших в классе. Занятия проходят интересно, с играми и песнями.
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">ОС</div>
+                        <div class="author-info">
+                            <h4>Ольга Семенова</h4>
+                            <p>мама Софии, 9 лет</p>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="review-card">
+                    <div class="review-content">
+                        Репетитор просто чудесный! Мой сын всегда боялся отвечать у доски, стеснялся. После занятий с Анной стал увереннее в себе, начал участвовать в олимпиадах по математике. Уроки проходят так интересно, что сын всегда ждет следующего занятия. Оценки улучшились по всем предметам.
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">ИМ</div>
+                        <div class="author-info">
+                            <h4>Ирина Михайлова</h4>
+                            <p>мама Артема, 10 лет</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summer Section -->
+    <section class="summer" id="summer">
+        <div class="container">
+            <div class="section-title">
+                <h2>Летние уроки</h2>
+                <p>Подготовьте ребенка к новому учебному году без стресса</p>
+            </div>
+            
+            <div class="summer-content">
+                <div class="summer-text">
+                    <h2>Летняя программа "Без пробелов"</h2>
+                    <p>Лето — прекрасное время, чтобы заполнить пробелы в знаниях, повторить сложные темы и подготовиться к новому учебному году без спешки и стресса.</p>
+                    <p>Моя летняя программа разработана специально для того, чтобы обучение было эффективным, но при этом не перегружало ребенка во время каникул.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div>
+                                <h3>Гибкий график</h3>
+                                <p>Занимайтесь 2-3 раза в неделю в удобное время</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div>
+                                <h3>Игровой формат</h3>
+                                <p>Уроки в форме квестов и интерактивов</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div>
+                                <h3>Интенсив по основным темам</h3>
+                                <p>Повторение сложных тем предыдущего года и знакомство с новыми</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/p/DJ9pGLNMAjf/?img_index=1" class="btn btn-light">Записаться на летний курс</a>
+                </div>
+                
+                <div class="summer-image">
+                    <div class="summer-image-container">
+                        Нужно ли школьникам учиться на летних каникулах? 
+                        Может быть лучше хорошо отдохнуть, чтобы с новыми силами в сентябре взяться за работу? 
+                        Можно ли совместить отдых и учёбу? Попробуем ответить на эти вопросы.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <!-- <section class="cases" id="cases">
+        <div class="container">
+            <div class="section-title">
+                <h2>Успешные кейсы</h2>
+                <p>Реальные истории успеха моих учеников</p>
+            </div>
+            
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-image">
+                        Кейс: Математика
+                    </div>
+                    <div class="case-content">
+                        <h3>Решение сложных задач</h3>
+                        <p>Ученик 3 класса не понимал принципы решения составных задач. После 3 месяцев занятий по специальной методике научился самостоятельно анализировать условие задачи и выбирать правильный способ решения.</p>
+                        <div class="case-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">4 → 9</div>
+                                <div class="stat-label">задач за урок</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">83%</div>
+                                <div class="stat-label">правильных решений</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card">
+                    <div class="case-image">
+                        Кейс: Русский язык
+                    </div>
+                    <div class="case-content">
+                        <h3>Правописание безударных гласных</h3>
+                        <p>Ученица 2 класса делала в среднем 15 ошибок на диктант из-за проблем с безударными гласными. После курса из 12 занятий количество ошибок снизилось до 2-3, появилась уверенность в себе.</p>
+                        <div class="case-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">15 → 2</div>
+                                <div class="stat-label">ошибок в диктанте</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">уверенности</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-card">
+                    <div class="case-image">
+                        Кейс: Беларуская мова
+                    </div>
+                    <div class="case-content">
+                        <h3>Павышэнне моўнага ўзроўню</h3>
+                        <p>Вучань 4 класа з рускамоўнай сям'і меў цяжкасці з беларускай мовай. Праз 4 месяцы заняткаў па спецыяльнай праграме ён не толькі палепшыў адзнакі, але і стаў актыўна ўдзельнічаць у школьных мерапрыемствах.</p>
+                        <div class="case-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">3 → 8</div>
+                                <div class="stat-label">бал за тэрмін</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">+40%</div>
+                                <div class="stat-label">слоўнікавы запас</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Готовы начать обучение?</h2>
+            <p>Запишитесь на бесплатный пробный урок и узнайте, как я могу помочь вашему ребенку</p>
+            <a href="https://www.instagram.com/direct/t/17845629072257022/" class="btn btn-light">Записаться на пробный урок</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="logo">
+                        <div class="logo-placeholder"><img src="img\logo.png" alt=”logo”></div>
+                        primary.<span>guru</span>
+                    </a>
+                    <p>Онлайн-репетитор для учеников начальной школы. Занятия по математике, русскому и белорусскому языку.</p>
+                    <div class="social-links">
+                        <!-- <a href="#" class="social-link"><i class="fab fa-vk"></i></a> -->
+                        <a href="https://t.me/primaryGURU" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/direct/t/17845629072257022/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Предметы</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-calculator"></i> Математика</li>
+                        <li><i class="fas fa-book"></i> Русский язык</li>
+                        <li><i class="fas fa-language"></i> Беларуская мова</li>
+                        <li><i class="fas fa-lightbulb"></i> Подготовка к школе</li>
+                        <li><i class="fas fa-brain"></i> Развитие мышления</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="contact-list">
+                        <!-- <li><i class="fas fa-phone"></i> +375 (29) 123-45-67</li> -->
+                        <li><i class="fas fa-envelope"></i>primaryschoolfocus@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 20:00</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Минск, Беларусь</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="contact-list">
+                        <li><a href="#about"><i class="fas fa-user"></i> Обо мне</a></li>
+                        <li><a href="#services"><i class="fas fa-book-open"></i> Услуги</a></li>
+                        <li><a href="#lessons"><i class="fas fa-laptop"></i> Занятия</a></li>
+                        <li><a href="#summer"><i class="fas fa-sun"></i> Летние уроки</a></li>
+                        <li><a href="#contact"><i class="fas fa-edit"></i> Записаться</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 primary.guru. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
