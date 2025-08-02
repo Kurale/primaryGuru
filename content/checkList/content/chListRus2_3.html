@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чек-лист по математике для перехода из 4-го в 5-й класс (РБ)</title>
+    <title>Чек-лист по русскому языку для перехода в 3-й класс (РБ)</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to bottom right, #e6f0ff, #96d1e2);
-            color: #324c96;
+            background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+            color: #1b5e20;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
@@ -18,8 +18,7 @@
 
         h1 {
             text-align: center;
-            color: #fb7112 ;
-            /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+            color: #2e7d32;
             margin-bottom: 30px;
             font-size: 2.5rem;
         }
@@ -27,7 +26,7 @@
         #checklist-container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: #e6f0ff;
+            background-color: #e8f5e9;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -36,8 +35,8 @@
         }
 
         .checklist-item {
-            background-color: #e6f0ff;
-            border: 1px solid  #324c96;
+            background-color: #e8f5e9;
+            border: 1px solid  #2e7d32;
             margin-bottom: 8px;
             padding: 8px;
             border-radius: 8px;
@@ -51,13 +50,13 @@
         }
 
         .checklist-item:hover {
-            background-color: #e6f0ff;
+            background-color: #c8e6c9;
             transform: translateY(-3px);
         }
 
         .checklist-item.checked {
-            background-color: #98fb98;
-            border-color: #32cd32;
+            background-color: #a5d6a7;
+            border-color: #388e3c;
             opacity: 0.9;
             animation: item-checked 0.5s ease forwards;
         }
@@ -80,7 +79,7 @@
         .checkbox {
             width: 25px;
             height: 25px;
-            border: 2px solid  #fb7112 ;
+            border: 2px solid  #2e7d32;
             border-radius: 50%;
             margin-right: 15px;
             display: flex;
@@ -91,8 +90,8 @@
         }
 
         .checklist-item.checked .checkbox {
-            background-color: #32cd32;
-            border-color: #32cd32;
+            background-color: #388e3c;
+            border-color: #388e3c;
         }
 
         .checkmark {
@@ -116,10 +115,10 @@
             text-align: center;
             font-size: 2em;
             font-weight: bold;
-            color: #fb7112;
+            color: #2e7d32;
             padding: 15px;
-            background-color: #e6f0ff;
-            border: 1px solid #324c96;
+            background-color: #e8f5e9;
+            border: 1px solid #2e7d32;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -131,23 +130,22 @@
         @keyframes percentage-pulse {
             0% {
                 transform: scale(1);
-                color: #dc143c;
+                color: #1b5e20;
             }
             50% {
                 transform: scale(1.05);
-                color: #ff4500;
+                color: #4caf50;
             }
             100% {
                 transform: scale(1);
-                color: #dc143c;
+                color: #1b5e20;
             }
         }
 
-        /* Стили для глобального тултипа */
         .global-tooltip {
             position: fixed;
-            background-color: #324c96;
-            color: #e6f0ff;
+            background-color: #2e7d32;
+            color: #e8f5e9;
             padding: 8px;
             border-radius: 8px;
             z-index: 1000;
@@ -158,7 +156,7 @@
             width: 300px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             pointer-events: none;
-            border: 2px solid  #fb7112;
+            border: 2px solid  #1b5e20;
             transform: translateY(15px);
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
@@ -171,10 +169,9 @@
             transform: translateX(-50%);
             border-width: 0 10px 10px 10px;
             border-style: solid;
-            border-color: transparent transparent #e6f0ff transparent;
+            border-color: transparent transparent #e8f5e9 transparent;
         }
 
-        /* Адаптивность для мобильных устройств */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -230,59 +227,46 @@
         }
     </style>
 </head>
-<a href="../../index.html" class="sticker-btn" 
-   style="display:inline-block;padding:12px 24px;background:linear-gradient(#4A90E2,#2A52BE);color:white;text-decoration:none;font-family:sans-serif;font-weight:bold;font-size:16px;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.2),inset 0 2px 2px rgba(255,255,255,0.3);border:none;cursor:pointer;transition:all 0.3s ease;position:fixed;overflow:hidden;transform:rotate(0);">
-  на главную
-</a>
 <body>
-    <h1>Чек-лист по математике: Готовность к 5-му классу</h1>
+    <h1>Чек-лист по русскому языку: Готовность к 3-му классу</h1>
     <div id="checklist-container">
-        <div class="checklist-item" data-tooltip="Например, числа 56 789, 100 000, 999 999. Уметь читать, писать и сравнивать их.">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Понимаю и использую числа до миллиона</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Например: 45321 + 12879, 87654 - 34567">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Могу складывать и вычитать многозначные числа</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Например: 12345 * 6, 98765 / 5, 2345 * 15, 56789 / 23">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Могу умножать и делить многозначные числа на однозначное и двузначное число</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Например, задачи про скорость, время, расстояние, или задачи вроде: «Найти 1/4 от числа 200»">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Решаю текстовые задачи (на движение, на нахождение части числа, на пропорциональное деление)</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Например, перевести 1 км в метры (1000 м), 1 кг в граммы (1000 г), 1 час в минуты (60 мин), 1 кв.м в кв.см (10000 кв.см).">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Знаю основные единицы измерения длины, массы, времени, площади и объема и умею их переводить</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Например, найти периметр квадрата со стороной 5 см (20 см), площадь прямоугольника со сторонами 4 см и 6 см (24 кв.см).">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Вычисляю периметр и площадь прямоугольника (квадрата)</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Например, понимать, что 1/2 - это половина, 1/4 - четверть. Сложение и вычитание дробей с одинаковым знаменателем (например, 1/4 + 2/4 = 3/4).">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Понимаю, что такое дроби, и могу выполнять простые действия с ними</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Уметь рисовать эти фигуры по заданным параметрам.">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Строю простейшие геометрические фигуры (отрезки, лучи, прямые углы)</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Уметь извлекать информацию из таблиц и диаграмм и, возможно, строить простейшие.">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Работаю с таблицами и диаграммами</div>
-        </div>
-        <div class="checklist-item" data-tooltip="Например: 10 + 5 * 2 = 20, (10 + 5) * 2 = 30.">
-            <div class="checkbox"><span class="checkmark">✔</span></div>
-            <div class="item-text">Применяю правила порядка выполнения действий в выражениях со скобками и без скобок</div>
-        </div>
-    </div>
+<div class="checklist-item" data-tooltip="Различать гласные/согласные, твердые/мягкие, звонкие/глухие согласные. Знать алфавит, использовать его для поиска слов в словаре.">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Различаю звуки и буквы, знаю алфавит</div>
+</div>
+<div class="checklist-item" data-tooltip="Уметь делить слова на слоги, определять ударный слог. Правильно переносить слова по слогам (ко-шка, сту-ден-ты).">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Умею делить слова на слоги и переносить слова</div>
+</div>
+<div class="checklist-item" data-tooltip="Распознавать имена существительные, прилагательные, глаголы в предложении. Определять их основные характеристики.">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Различаю части речи (существительное, прилагательное, глагол)</div>
+</div>
+<div class="checklist-item" data-tooltip="Определять род (мужской, женский, средний), число (единственное, множественное), падеж (именительный, родительный и др.) у существительных.">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Определяю род, число и падеж существительных</div>
+</div>
+<div class="checklist-item" data-tooltip="Находить корень в родственных словах, подбирать однокоренные слова. Образовывать новые слова с помощью приставок и суффиксов.">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Нахожу корень слова, образую однокоренные слова</div>
+</div>
+<div class="checklist-item" data-tooltip="Писать словарные слова без ошибок. Проверять безударные гласные в корне с помощью однокоренных слов (вода - воды).">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Пишу словарные слова и проверяю безударные гласные</div>
+</div>
+<div class="checklist-item" data-tooltip="Находить подлежащее и сказуемое в предложении. Различать повествовательные, вопросительные и побудительные предложения.">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Выделяю главные члены предложения, определяю тип предложения</div>
+</div>
+<div class="checklist-item" data-tooltip="Составлять связный текст из 3-5 предложений на заданную тему. Правильно оформлять предложения (заглавная буква, точка).">
+<div class="checkbox"><span class="checkmark">✔</span></div>
+<div class="item-text">Составляю и записываю небольшой текст</div>
+</div>
+</div>
     <div class="percentage" id="readiness-percentage">
         Процент готовности: 0%
     </div>
 
-    <!-- Глобальный тултип -->
     <div class="global-tooltip" id="global-tooltip"></div>
 
     <script>
@@ -329,17 +313,14 @@
                 let left = x - tooltipRect.width / 2;
                 let top = y + offset;
                 
-                // Проверка правой границы
                 if (left + tooltipRect.width > window.innerWidth) {
                     left = window.innerWidth - tooltipRect.width - 5;
                 }
                 
-                // Проверка левой границы
                 if (left < 5) {
                     left = 5;
                 }
                 
-                // Проверка нижней границы
                 if (top + tooltipRect.height > window.innerHeight) {
                     top = y - tooltipRect.height - offset;
                 }
@@ -355,7 +336,6 @@
                 currentItem = null;
             }
 
-            // Обработчик движения мыши для позиционирования тултипа
             document.addEventListener('mousemove', (e) => {
                 if (currentItem) {
                     positionTooltip(e.clientX, e.clientY);
@@ -371,21 +351,18 @@
                 });
                 
                 item.addEventListener('mouseenter', (e) => {
-                    // Отменяем предыдущий таймаут, если он есть
                     if (tooltipTimeout) {
                         clearTimeout(tooltipTimeout);
                     }
                     
                     currentItem = item;
                     
-                    // Устанавливаем таймаут для показа тултипа
                     tooltipTimeout = setTimeout(() => {
                         showTooltip(tooltipText, e.clientX, e.clientY);
-                    }, 300); // Задержка 300 мс
+                    }, 300);
                 });
                 
                 item.addEventListener('mouseleave', () => {
-                    // При уходе мыши с элемента отменяем таймаут и скрываем тултип
                     if (tooltipTimeout) {
                         clearTimeout(tooltipTimeout);
                         tooltipTimeout = null;
@@ -394,12 +371,10 @@
                 });
             });
 
-            // Скрываем тултип при клике в любом месте
             document.addEventListener('click', () => {
                 hideTooltip();
             });
 
-            // Скрываем тултип при изменении размера окна
             window.addEventListener('resize', () => {
                 hideTooltip();
             });

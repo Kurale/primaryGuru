@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Повторение русского языка за 4 класс (переход в 5-й класс)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #2c3e50;
+            padding: 20px;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #4a69bd 0%, #1e3799 100%);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(30, 55, 153, 0.2);
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .authors {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-top: 10px;
+            opacity: 0.85;
+        }
+        
+        .info-box {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #4a69bd;
+        }
+        
+        .info-box p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        #checklist-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+            border-left: 4px solid #4a69bd;
+            cursor: pointer;
+        }
+        
+        .checklist-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(74, 105, 189, 0.15);
+            background-color: #edf2ff;
+        }
+        
+        .checklist-item.checked {
+            background-color: #e3f2fd;
+            border-left-color: #1e88e5;
+        }
+        
+        .checkbox {
+            width: 28px;
+            height: 28px;
+            border: 2px solid #4a69bd;
+            border-radius: 50%;
+            margin-right: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+            margin-top: 3px;
+        }
+        
+        .checklist-item.checked .checkbox {
+            background-color: #1e88e5;
+            border-color: #1e88e5;
+        }
+        
+        .checkmark {
+            color: white;
+            font-size: 1.2rem;
+            display: none;
+        }
+        
+        .checklist-item.checked .checkmark {
+            display: block;
+        }
+        
+        .item-content {
+            flex-grow: 1;
+        }
+        
+        .item-text {
+            font-size: 1.35rem;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .item-details {
+            font-size: 1.1rem;
+            color: #546e7a;
+            line-height: 1.6;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .item-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        
+        .tag-important {
+            background-color: #ffeb3b;
+            color: #333;
+        }
+        
+        .tag-grammar {
+            background-color: #4caf50;
+            color: white;
+        }
+        
+        .tag-spelling {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        .tag-writing {
+            background-color: #9c27b0;
+            color: white;
+        }
+        
+        .percentage-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .percentage {
+            display: inline-block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e3799;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(30, 55, 153, 0.2);
+            transition: all 0.5s ease;
+        }
+        
+        .percentage.updated {
+            animation: percentage-pulse 1.2s ease;
+        }
+        
+        @keyframes percentage-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); box-shadow: 0 8px 25px rgba(30, 55, 153, 0.3); }
+            100% { transform: scale(1); }
+        }
+        
+        .progress-container {
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4a69bd 0%, #1e3799 100%);
+            border-radius: 10px;
+            transition: width 0.8s ease;
+        }
+        
+        .instructions {
+            text-align: center;
+            color: #546e7a;
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .checklist-item {
+                padding: 15px;
+            }
+            
+            .item-text {
+                font-size: 1.2rem;
+            }
+            
+            .percentage {
+                font-size: 2rem;
+                padding: 15px 30px;
+            }
+            
+            .checkbox {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .authors {
+                font-size: 0.95rem;
+            }
+            
+            .checklist-item {
+                padding: 12px;
+            }
+            
+            .item-text {
+                font-size: 1.1rem;
+            }
+            
+            .item-details {
+                font-size: 1rem;
+            }
+            
+            .percentage {
+                font-size: 1.8rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Русский язык: повторение за 4 класс</h1>
+            <div class="subtitle">Переход в 5-й класс</div>
+            <div class="authors">По учебнику: Мурина Л.А., Долбик Е.Е., Леонович В.Л., Жадейко Ж.Ф.</div>
+        </header>
+        
+        <div class="info-box">
+            <p>Этот чек-лист поможет повторить ключевые темы русского языка за 4 класс по учебнику, утверждённому Министерством образования Республики Беларусь.</p>
+            <p>Отмечайте выполненные задания для отслеживания прогресса подготовки к 5 классу.</p>
+        </div>
+        
+        <div id="checklist-container">
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Различаю части речи и определяю их грамматические признаки</div>
+                    <div class="item-details">
+                        Существительное (род, склонение, падеж), прилагательное (род, падеж), глагол (вид, время, спряжение), местоимение (разряд, лицо)
+                    </div>
+                    <span class="item-tag tag-grammar">Грамматика</span>
+                </div>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Выполняю морфологический разбор частей речи</div>
+                    <div class="item-details">
+                        Последовательный разбор: часть речи → начальная форма → постоянные признаки → непостоянные признаки → синтаксическая роль
+                    </div>
+                    <span class="item-tag tag-important">Важно для 5 класса</span>
+                </div>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Правильно пишу безударные гласные в окончаниях существительных и прилагательных</div>
+                    <div class="item-details">
+                        Определение падежа, склонения существительного; согласование прилагательного с существительным (в тундре - П.п., в синем море - П.п.)
+                    </div>
+                    <span class="item-tag tag-spelling">Орфография</span>
+                </div>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Различаю и правильно пишу НЕ с разными частями речи</div>
+                    <div class="item-details">
+                        С существительными, прилагательными (неправда, неинтересный), с глаголами (не знал), с причастиями (непрочитанная книга)
+                    </div>
+                    <span class="item-tag tag-spelling">Орфография</span>
+                </div>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Анализирую синтаксис предложения</div>
+                    <div class="item-details">
+                        Определяю грамматическую основу (подлежащее, сказуемое), второстепенные члены, тип предложения (простое/сложное, распространенное/нераспространенное)
+                    </div>
+                    <span class="item-tag tag-grammar">Синтаксис</span>
+                </div>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Использую правильную пунктуацию в сложных предложениях</div>
+                    <div class="item-details">
+                        Запятые между частями сложного предложения, в предложениях с однородными членами, при обращении, вводных словах
+                    </div>
+                    <span class="item-tag tag-important">Важно для 5 класса</span>
+                </div>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Применяю правила правописания приставок и суффиксов</div>
+                    <div class="item-details">
+                        Приставки на -з/-с (безоблачный, расписание), приставки пре-/при-, суффиксы -ек-/-ик- (ключик - ключика, замочек - замочка)
+                    </div>
+                    <span class="item-tag tag-spelling">Орфография</span>
+                </div>
+            </div>
+            
+            <div class="checklist-item">
+                <div class="checkbox"><span class="checkmark">✓</span></div>
+                <div class="item-content">
+                    <div class="item-text">Составляю связные тексты разных стилей и типов речи</div>
+                    <div class="item-details">
+                        Повествование, описание, рассуждение; использование средств выразительности, логичное изложение мыслей (5-8 предложений)
+                    </div>
+                    <span class="item-tag tag-writing">Развитие речи</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="percentage-container">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+            </div>
+            <div class="percentage" id="readiness-percentage">Процент готовности: 0%</div>
+            <div class="instructions">Кликните на пункты, чтобы отметить их выполнение</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checklistItems = document.querySelectorAll('.checklist-item');
+            const readinessPercentageElement = document.getElementById('readiness-percentage');
+            const progressBar = document.getElementById('progress-bar');
+            
+            function updateProgress() {
+                const totalItems = checklistItems.length;
+                const checkedItems = document.querySelectorAll('.checklist-item.checked').length;
+                const percentage = (checkedItems / totalItems) * 100;
+                
+                readinessPercentageElement.textContent = `Процент готовности: ${Math.round(percentage)}%`;
+                progressBar.style.width = `${percentage}%`;
+                
+                // Анимация обновления
+                readinessPercentageElement.classList.remove('updated');
+                void readinessPercentageElement.offsetWidth;
+                readinessPercentageElement.classList.add('updated');
+                
+                // Цветовая индикация
+                if (percentage < 30) {
+                    progressBar.style.background = "linear-gradient(90deg, #e74c3c 0%, #c0392b 100%)";
+                } else if (percentage < 70) {
+                    progressBar.style.background = "linear-gradient(90deg, #f39c12 0%, #d35400 100%)";
+                } else {
+                    progressBar.style.background = "linear-gradient(90deg, #4a69bd 0%, #1e3799 100%)";
+                }
+            }
+            
+            checklistItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('checked');
+                    
+                    // Анимация при клике
+                    if (item.classList.contains('checked')) {
+                        item.style.animation = 'none';
+                        setTimeout(() => {
+                            item.style.animation = 'pulse 0.5s';
+                        }, 10);
+                    }
+                    
+                    updateProgress();
+                });
+            });
+            
+            // Добавляем анимацию пульсации
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes pulse {
+                    0% { transform: scale(1); box-shadow: none; }
+                    50% { transform: scale(1.02); box-shadow: 0 5px 20px rgba(74, 105, 189, 0.3); }
+                    100% { transform: scale(1); box-shadow: none; }
+                }
+                
+                .checklist-item {
+                    animation: none;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Инициализация прогресса
+            updateProgress();
+        });
+    </script>
+</body>
+</html>
